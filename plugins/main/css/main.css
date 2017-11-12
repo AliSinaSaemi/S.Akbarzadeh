@@ -173,6 +173,21 @@ p {
   padding: 140px;
 }
 
+.upper-title-2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.downer-title-2 {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #404040;
+}
+
+
 /********************************
 
             NAVBAR
@@ -827,109 +842,125 @@ p {
 }
 
 .landing-progress {
-    background-image: url(../../../img/bg/bg-2.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #000;
+  background-image: url(../../../img/bg/bg-2.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #000;
 }
 
-.progress{
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
-    background: none;
-    margin: 0 auto;
-    box-shadow: none;
-    position: relative;
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
 }
-.progress:after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 12px solid #282828;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #282828;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.progress > span{
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 1;
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
-.progress .progress-left{
-    left: 0;
+
+.progress .progress-left {
+  left: 0;
 }
-.progress .progress-bar{
-    width: 100%;
-    height: 100%;
-    background: none;
-    border-width: 12px;
-    border-style: solid;
-    position: absolute;
-    top: 0;
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
 }
-.progress .progress-left .progress-bar{
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    -webkit-transform-origin: center left;
-    transform-origin: center left;
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
 }
-.progress .progress-right{
-    right: 0;
+
+.progress .progress-right {
+  right: 0;
 }
-.progress .progress-right .progress-bar{
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    -webkit-transform-origin: center right;
-    transform-origin: center right;
-    transform: rotate(180deg);
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  transform: rotate(180deg);
 }
-.progress .progress-value{
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    background: rgba(102, 102, 103, 0.54);
-    font-size: 35px;
-    color: #fff;
-    line-height: 135px;
+
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: rgba(102, 102, 103, 0.54);
+  font-size: 35px;
+  color: #fff;
+  line-height: 135px;
   font-weight: bold;
-    text-align: center;
-    position: absolute;
-    top: 5%;
-    left: 5%;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
 }
-.progress.blue .progress-bar{
-    border-color: #1abc9c;
+
+.progress.blue .progress-bar {
+  border-color: #1abc9c;
 }
-.progress.blue .progress-left .progress-bar{
-    transform: rotate(160deg);
+
+.progress.blue .progress-left .progress-bar {
+  transform: rotate(160deg);
 }
-.progress.yellow .progress-bar{
-    border-color: #1abc9c;
+
+.progress.yellow .progress-bar {
+  border-color: #1abc9c;
 }
-.progress.yellow .progress-left .progress-bar{
-    transform: rotate(90deg);
+
+.progress.yellow .progress-left .progress-bar {
+  transform: rotate(90deg);
 }
-.progress.pink .progress-bar{
-    border-color: #1abc9c;
+
+.progress.pink .progress-bar {
+  border-color: #1abc9c;
 }
-.progress.pink .progress-left .progress-bar{
-    transform: rotate(5deg);
+
+.progress.pink .progress-left .progress-bar {
+  transform: rotate(5deg);
 }
-.progress.green .progress-bar{
-    border-color: #1abc9c;
+
+.progress.green .progress-bar {
+  border-color: #1abc9c;
 }
-.progress.green .progress-left .progress-bar{
-    transform: rotate(150deg);
+
+.progress.green .progress-left .progress-bar {
+  transform: rotate(150deg);
 }
 
 .l-p-title {
@@ -947,14 +978,124 @@ p {
   text-align: center;
   color: #fff;
 }
+
 .progress-content p {
   color: #fff;
   font-size: 13px;
 }
+
 .progress-content h3 {
   font-size: 25px;
   margin-bottom: 20px
 }
+
+.l-d-p {
+  margin-top: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.landing-datetime section {
+  margin-top: 30px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 30px;
+}
+
+.landing-datetime .date-title {
+  text-align: center;
+}
+
+.landing-datetime .date-title h1 {
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 300;
+}
+
+.landing-datetime .date-title h3 {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 300;
+  margin-bottom: 0;
+  color: #1abc9c;
+}
+
+.date-content-primary {
+  border-left: 1px solid #dcdcdc;
+}
+
+.due-date {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.due-date li:first-child,
+.due-date li:last-child {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.due-date li:last-child {
+  color: #1abc9c;
+}
+
+.due-date li:first-child {
+  position: relative
+}
+
+.due-date li:first-child:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: -14px;
+  width: 10px;
+  height: 5px;
+  background: #2a2b2c;
+}
+
+.date-content-primary span {
+  font-size: 11px;
+}
+
+.date-content-inbox {
+  text-align: left
+}
+
+.date-content-inbox h2 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #1abc9c;
+}
+
+.date-content-inbox h3 {
+  font-size: 12px;
+  line-height: 8px;
+}
+
+.date-content-primary div.hr {
+  width: 110px;
+  background: #dcdcdc;
+  height: .5px;
+}
+
+.date-content-secondary a {
+  color: #2a2b2c;
+  text-decoration: none;
+  font-size: 20px;
+  transition: .4s;
+}
+
+.date-content-secondary a:hover {
+  color: #1abc9c;
+}
+
+.date-content-secondary p {
+  color: #2a2b2c;
+  line-height: 30px;
+  margin-top: 10px;
+}
+
+
 /********************************
 
             FOOTER
@@ -974,9 +1115,8 @@ p {
   }
   .l-p-title {
     margin-bottom: 30px;
+  }
 }
-}
-
 
 @media (min-width: 768px) {
   .cssmenu,
@@ -1005,14 +1145,14 @@ p {
     top: 11px;
   }
   .l-a-info .col-md-4 {
-  margin-top: 50px;
-}
+    margin-top: 50px;
+  }
   .landing-progress .col-sm-6 {
     margin-top: 50px;
   }
   .l-p-title {
     margin-bottom: 50px;
-}
+  }
 }
 
 @media (max-width: 575px) {
