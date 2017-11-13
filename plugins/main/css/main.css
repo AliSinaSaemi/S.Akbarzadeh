@@ -161,16 +161,20 @@ p {
   position: relative;
 }
 
+.padding-x {
+  padding: 25px 0;
+}
+
 .padding-1 {
-  padding: 50px;
+  padding: 50px 0;
 }
 
 .padding-2 {
-  padding: 100px;
+  padding: 100px 0;
 }
 
 .padding-3 {
-  padding: 140px;
+  padding: 140px 0;
 }
 
 .upper-title-2 {
@@ -525,6 +529,7 @@ p {
 .cssmenu ul ul a p {
   font-size: 15px;
   text-align: center;
+  color: #c5c3c3;
 }
 
 .cssmenu ul ul a:hover {
@@ -995,10 +1000,27 @@ p {
   text-align: center;
 }
 
+.landing-datetime_dark section,
 .landing-datetime section {
   margin-top: 30px;
-  border-bottom: 1px solid #dcdcdc;
   padding-bottom: 30px;
+}
+
+.landing-datetime section {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.landing-datetime_dark section {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.landing-datetime_dark section:last-child,
+.landing-datetime section:last-child {
+  border-bottom: none;
+}
+
+.landing-datetime_dark {
+  background-color: #f1f1f1
 }
 
 .landing-datetime .date-title {
@@ -1116,6 +1138,32 @@ p {
   .l-p-title {
     margin-bottom: 30px;
   }
+  .date-content-secondary.col-md-9 {
+    margin-top: 60px;
+  }
+  .date-content-inbox h3,
+  .date-content-inbox h2 {
+    text-align: center;
+  }
+  .date-content-primary {
+    border-left: none;
+  }
+  .date-content-primary div.hr {
+    width: 110px;
+    margin: auto;
+    background: #dcdcdc;
+    height: .5px;
+  }
+  .date-content-primary span {
+    margin: auto;
+    display: block;
+    width: 55px;
+  }
+  .landing-datetime .date-title h3 {
+    padding-bottom: 15px;
+    color: #1abc9c;
+    border-bottom: 1px solid #1abc9c;
+}
 }
 
 @media (min-width: 768px) {
@@ -1153,6 +1201,12 @@ p {
   .l-p-title {
     margin-bottom: 50px;
   }
+  .date-content-secondary {
+    text-align: center;
+  }
+  .l-d-p {
+    padding: 0 15px;
+}
 }
 
 @media (max-width: 575px) {
