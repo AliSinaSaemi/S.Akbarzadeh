@@ -1125,11 +1125,11 @@ p {
 }
 
 .landing-myjob {
-      background-image: url(../../../img/bg/wood.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #000;
+  background-image: url(../../../img/bg/wood.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #000;
 }
 
 .landing-myjob .upper-title,
@@ -1180,17 +1180,18 @@ p {
   color: #fff;
   padding: 0;
 }
+
 .panel-title a {
-display: block;
-    color: #1abc9c;
-    padding: 15px;
-    position: relative;
-    font-size: 16px;
-    font-weight: 400;
-        width: 85%;
-    transition: .5s;
-    border: 2px solid #1abc9c;
-    border-radius: 50px;
+  display: block;
+  color: #1abc9c;
+  padding: 15px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  width: 85%;
+  transition: .5s;
+  border: 2px solid #1abc9c;
+  border-radius: 50px;
 }
 
 .panel-title a:hover {
@@ -1236,8 +1237,9 @@ display: block;
   transform: scale(0);
 }
 
-.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
-    border-top: none;
+.panel-group .panel-heading + .panel-collapse > .panel-body,
+.panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: none;
 }
 
 #bs-collapse .panel-heading a:after {
@@ -1252,14 +1254,14 @@ display: block;
 }
 
 .arrow-circle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #1abc9c;
-    left: -66px;
-    top: 2px;
-    border-radius: 50px;
-    transition: .5s;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #1abc9c;
+  left: -66px;
+  top: 2px;
+  border-radius: 50px;
+  transition: .5s;
 }
 
 #bs-collapse .panel-heading.active a:after {
@@ -1269,13 +1271,15 @@ display: block;
 }
 
 .panel-heading.active .panel-title a {
-    color: #fff;
-    border: 2px solid #fff;
+  color: #fff;
+  border: 2px solid #fff;
 }
+
 .panel-heading.active .arrow-circle {
   border: 2px solid #fff;
   color
 }
+
 
 /* #accordion rotate icon option */
 
@@ -1284,7 +1288,7 @@ display: block;
   font-size: 24px;
   position: absolute;
   font-family: FontAwesome;
-left: -55px;
+  left: -55px;
   top: 11px;
   transform: rotate(180deg);
   transition: all 0.5s;
@@ -1297,12 +1301,140 @@ left: -55px;
   color: #Fff
 }
 
+.landing-contact {
+  background-image: url(../../../img/bg/castle.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #000;
+}
+
+.landing-contact form input,
+.landing-contact form textarea {
+  font-size: 17px;
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  padding: 25px;
+  font-family: 'IRANSans';
+  transition: .5s;
+  color: #fff
+}
+
+.landing-contact form input:focus,
+.landing-contact form textarea:focus {
+  background-color: rgba(0, 0, 0, 0.82);
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: 'IRANSans';
+  transition: .5s;
+}
+
+.btn-default:hover {
+  color: #fff;
+  background-color: #101010;
+}
+
+.landing-contact .downer-title-2,
+.landing-contact .upper-title-2 {
+  color: #fff
+}
+
+.landing-contact .downer-title-2 {
+  margin-bottom: 50px;
+}
+
+.landing-contact ul {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.landing-contact ul li {
+  margin-bottom: 50px;
+  color: #Fff
+}
+
+.landing-contact ul li:last-child {
+  margin-bottom: 0;
+}
+
+.landing-contact ul li span {
+  background-color: #1abc9c;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 27px;
+  margin-left: 11px;
+}
+
+.landing-contact ul li span i {
+  position: relative;
+  top: 4px;
+}
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1abc9c;
+  font-size: 30px;
+  border-radius: 50px;
+  height: 53px;
+  transition: .3s;
+  border: none;
+}
+
+.back-to-top:hover {
+  background-color: #101010;
+  color: #1abc9c;
+}
+
 
 /********************************
 
             FOOTER
 
 ********************************/
+
+footer {
+  text-align: center;
+  background-color: #1abc9c
+}
+
+footer ul {
+  margin-bottom: 10px;
+}
+
+footer .socail-media {
+  font-size: 70px;
+}
+
+footer .socail-media li a {
+  color: #fff;
+  transition: .5s;
+}
+
+footer .socail-media li a:hover {
+  color: #101010
+}
+
+footer h4 {
+  color: #fff;
+  font-size: 25px;
+}
+
+footer p {
+  color: #101010;
+  font-size: 13px;
+}
 
 
 /********************************
@@ -1343,6 +1475,9 @@ left: -55px;
     padding-bottom: 15px;
     color: #1abc9c;
     border-bottom: 1px solid #1abc9c;
+  }
+  .landing-contact form {
+    margin-top: 30px;
   }
 }
 
@@ -1387,6 +1522,9 @@ left: -55px;
   .l-d-p {
     padding: 0 15px;
   }
+  footer .socail-media {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1398,5 +1536,14 @@ left: -55px;
   .profile-img {
     width: 300px;
   }
+  .panel-title a {
+    .back-to-top {
+      cursor: pointer;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+    }
+    width: 80%;
+  }
 }
-
