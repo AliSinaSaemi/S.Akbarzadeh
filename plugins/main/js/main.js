@@ -17,6 +17,23 @@ $(document).ready(function () {
     topSpacing: 0
   });
 });
+
+/*=======================
+
+        accordion.js
+ 
+=======================*/
+$(document).ready(function() {
+  $('.collapse.in').prev('.panel-heading').addClass('active');
+  $('#accordion, #bs-collapse')
+    .on('show.bs.collapse', function(a) {
+      $(a.target).prev('.panel-heading').addClass('active');
+    })
+    .on('hide.bs.collapse', function(a) {
+      $(a.target).prev('.panel-heading').removeClass('active');
+    });
+});
+
 /*=======================
 
         sidenav.js
@@ -30,6 +47,8 @@ $('.sa-header-button').click(function (e) {
 $('.sa-close-btn').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
 });
+
+
 
 /*=======================
 

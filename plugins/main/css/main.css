@@ -8,6 +8,13 @@ body {
   margin: 0;
 }
 
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
 .width-full {
   width: 100%;
 }
@@ -1117,6 +1124,179 @@ p {
   margin-top: 10px;
 }
 
+.landing-myjob {
+      background-image: url(../../../img/bg/wood.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #000;
+}
+
+.landing-myjob .upper-title,
+.landing-myjob .downer-title {
+  color: #Fff
+}
+
+.landing-myjob .downer-title {
+  margin-bottom: 50px;
+}
+
+.wrap {
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.panel {
+  background: none;
+  box-shadow: none;
+}
+
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 10px
+}
+
+.panel-group .panel:last-child {
+  margin-bottom: 0
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+.panel-title a {
+display: block;
+    color: #1abc9c;
+    padding: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+        width: 85%;
+    transition: .5s;
+    border: 2px solid #1abc9c;
+    border-radius: 50px;
+}
+
+.panel-title a:hover {
+  text-decoration: none;
+}
+
+.panel-body {
+  background: transparent;
+  color: #Fff
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  transition: border-radius linear 0s;
+}
+
+
+/* #bs-collapse icon scale option */
+
+.panel-heading a:before {
+  content: "\f106";
+  position: absolute;
+  font-family: FontAwesome;
+  left: 15px;
+  top: 8px;
+  font-size: 24px;
+  transition: all 0.5s;
+  transform: scale(1);
+}
+
+.panel-heading.active a:before {
+  content: ' ';
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body, .panel-group .panel-heading + .panel-collapse > .list-group {
+    border-top: none;
+}
+
+#bs-collapse .panel-heading a:after {
+  content: ' ';
+  font-size: 24px;
+  position: absolute;
+  font-family: FontAwesome;
+  left: 5px;
+  top: 11px;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.arrow-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #1abc9c;
+    left: -66px;
+    top: 2px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+#bs-collapse .panel-heading.active a:after {
+  content: '\e909';
+  transform: scale(1);
+  transition: all 0.5s;
+}
+
+.panel-heading.active .panel-title a {
+    color: #fff;
+    border: 2px solid #fff;
+}
+.panel-heading.active .arrow-circle {
+  border: 2px solid #fff;
+  color
+}
+
+/* #accordion rotate icon option */
+
+#accordion .panel-heading a:before {
+  content: "\f106";
+  font-size: 24px;
+  position: absolute;
+  font-family: FontAwesome;
+left: -55px;
+  top: 11px;
+  transform: rotate(180deg);
+  transition: all 0.5s;
+}
+
+#accordion .panel-heading.active a:before {
+  transform: rotate(0deg);
+  transition: all 0.5s;
+  top: 7px;
+  color: #Fff
+}
+
 
 /********************************
 
@@ -1163,7 +1343,7 @@ p {
     padding-bottom: 15px;
     color: #1abc9c;
     border-bottom: 1px solid #1abc9c;
-}
+  }
 }
 
 @media (min-width: 768px) {
@@ -1206,7 +1386,7 @@ p {
   }
   .l-d-p {
     padding: 0 15px;
-}
+  }
 }
 
 @media (max-width: 575px) {
@@ -1219,3 +1399,4 @@ p {
     width: 300px;
   }
 }
+
