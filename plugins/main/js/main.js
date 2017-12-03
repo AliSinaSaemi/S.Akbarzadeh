@@ -58,7 +58,12 @@ $(document).ready(function () {
 });
 
 
-
+$('.post_social_options').tooltip();
+$(document).ready(function () {
+  $(".myTooltip").tooltip({
+    html: "true", 
+  });
+})
 /*=======================
 
         sidenav.js
