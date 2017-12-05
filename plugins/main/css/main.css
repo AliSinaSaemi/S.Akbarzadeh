@@ -1583,8 +1583,6 @@ p {
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0);
   transform: perspective(1000px) rotate3d(1, 0, 0, 0);
 }
-
-
 /********************************
 
             FOOTER

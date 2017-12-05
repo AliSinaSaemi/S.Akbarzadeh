@@ -65,9 +65,10 @@ $(document).ready(function () {
 $('.post_social_options').tooltip();
 $(document).ready(function () {
   $(".myTooltip").tooltip({
-    html: "true", 
+    html: "true",
   });
 });
+
 /*=======================
 
         sidenav.js
@@ -88,9 +89,12 @@ $('.sa-close-btn').click(function () {
  
 =======================*/
 $('[data-fancybox]').fancybox({
-  buttons : [
+  buttons: [
+        'close',
+        'share',
     'zoom',
-    'close'
+
+
   ]
 });
 /*=======================
