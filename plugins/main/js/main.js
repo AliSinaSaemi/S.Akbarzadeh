@@ -57,13 +57,17 @@ $(document).ready(function () {
     });
 });
 
+/*=======================
 
+        tooltips
+ 
+=======================*/
 $('.post_social_options').tooltip();
 $(document).ready(function () {
   $(".myTooltip").tooltip({
     html: "true", 
   });
-})
+});
 /*=======================
 
         sidenav.js
@@ -78,8 +82,17 @@ $('.sa-close-btn').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
 });
 
+/*=======================
 
-
+        ligthbox
+ 
+=======================*/
+$('[data-fancybox]').fancybox({
+  buttons : [
+    'zoom',
+    'close'
+  ]
+});
 /*=======================
 
         hide/ show

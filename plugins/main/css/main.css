@@ -1502,7 +1502,7 @@ p {
   left: 17px;
 }
 
-figure.effect-selena {
+.effect-selena {
   background: #fff;
   cursor: pointer;
 }
@@ -1512,24 +1512,20 @@ figure.effect-selena {
   padding-right: 17px;
 }
 
-figure.effect-selena img {
-  opacity: 0.95;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-figure img {
+.effect-selena img {
   position: relative;
   display: block;
   max-height: 100%;
   max-width: 100%;
   opacity: 0.8;
+    -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
-figure figcaption,
-figure figcaption > a {
+.effect-selena figcaption,
+.effect-selena figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -1537,7 +1533,7 @@ figure figcaption > a {
   height: 100%;
 }
 
-figure figcaption {
+.effect-selena figcaption {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -1546,7 +1542,7 @@ figure figcaption {
   backface-visibility: hidden;
 }
 
-figure h2 {
+.effect-selena h2 {
   word-spacing: -0.15em;
   font-weight: 300;
   -webkit-transition: -webkit-transform 0.35s;
@@ -1556,11 +1552,11 @@ figure h2 {
   margin: 0;
 }
 
-figure h2 span {
+.effect-selena h2 span {
   font-weight: 800;
 }
 
-figure p {
+.effect-selena p {
   letter-spacing: 1px;
   font-size: 68.5%;
   opacity: 0;
@@ -1572,17 +1568,17 @@ figure p {
   transform-origin: 50% 0%;
 }
 
-figure.effect-selena:hover img {
+.effect-selena:hover img {
   -webkit-transform: scale3d(0.95, 0.95, 1);
   transform: scale3d(0.95, 0.95, 1);
 }
 
-figure.effect-selena:hover h2 {
+.effect-selena:hover h2 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-figure.effect-selena:hover p {
+.effect-selena:hover p {
   opacity: 1;
   -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0);
   transform: perspective(1000px) rotate3d(1, 0, 0, 0);
@@ -1670,15 +1666,15 @@ footer p {
   .landing-contact form {
     margin-top: 30px;
   }
-  figure {
+  .effect-selena {
     margin-top: 50px;
   }
-  figure.effect-ming p {
+  .effect-ming p {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(.925, 1, 1);
   }
-  figure.effect-ming img {
+  .effect-ming img {
     opacity: 0.4;
   }
   .post-section h1 {
@@ -1701,22 +1697,29 @@ footer p {
     width: 150px;
     margin: auto;
   }
+  .effect-selena h2 {
+    margin-top: 50px;
+  }
+  .gallarybox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width:992px) {
-  figure.effect-ming:hover img {
+  .effect-ming:hover img {
     opacity: 0.4;
   }
-  figure.effect-ming:hover figcaption {
+  .effect-ming:hover figcaption {
     background-color: rgba(58, 52, 42, 0);
   }
-  figure.effect-ming:hover figcaption::before,
-  figure.effect-ming:hover p {
+  .effect-ming:hover figcaption::before,
+  .effect-ming:hover p {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(.925, 1, 1);
   }
-  figure.effect-ming:hover h2 {
+  .effect-ming:hover h2 {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
@@ -1763,6 +1766,25 @@ footer p {
   .l-d-p {
     padding: 0 15px;
   }
+  .effect-selena h2 {
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+  }
+  .effect-selena {
+    background: transparent;
+  }
+  .effect-selena img {
+    margin: auto;
+  }
+  .effect-selena p {
+    text-align: center;
+    opacity: 1;
+    transform: perspective(1000px) rotate3d(1, 0, 0, 0);
+  }
+  .effect-selena:hover img {
+    -webkit-transform: scale3d(0.95, 0.95, 1);
+    transform: scale3d(1, 1, 1);
+}
   footer .socail-media {
     font-size: 50px;
   }
