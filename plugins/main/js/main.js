@@ -83,20 +83,7 @@ $('.sa-close-btn').click(function () {
   $('.cssmenu').removeClass('cssmenuShow');
 });
 
-/*=======================
 
-        ligthbox
- 
-=======================*/
-$('[data-fancybox]').fancybox({
-  buttons: [
-        'close',
-        'share',
-    'zoom',
-
-
-  ]
-});
 /*=======================
 
         hide/ show
