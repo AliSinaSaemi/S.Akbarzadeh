@@ -16,7 +16,23 @@ $(document).ready(function () {
   $(".navbar").sticky({
     topSpacing: 0
   });
+  $(".posts-menu_fixed").sticky({
+    topSpacing: 50
+  });
 });
+
+/*=======================
+
+     Searchbox show
+ 
+=======================*/
+
+$(document).ready(function () {
+  $(".search-btn").click(function () {
+    $("#searchBox").toggleClass("search-show");
+  });
+});
+
 /*=======================
 
         back to top
