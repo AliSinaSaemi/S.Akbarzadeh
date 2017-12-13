@@ -1684,8 +1684,77 @@ p {
   transform: rotate(-90deg);
   color: #1abc9c;
 }
+.post-section h1,
+.post-section p,
+.post-section img {
+  z-index: 1;
+}
 
+.share-popup {
+  position: absolute;
+  left: -30px;
+  top: -62px;
+  opacity: 0;
+  transform: scale(0, 0);
+  transition: .5s;
+  z-index: 2;
+}
+.share_popup_open {
+  opacity: 1;
+    left: -68px;
+  transform: scale(1, 1);
+}
 
+.share-popup li {
+  padding: 0;
+  margin-top: 15px;
+}
+
+.share-popup li:first-child {
+  margin-top: 0;
+}
+
+.share-popup li a {
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: #fff
+}
+
+.share-popup li a.facebook {
+  background-color: #1a82bc;
+  padding: 10px 20px 6px 20px;
+}
+
+.share-popup li a.insta {
+  background-color: #bc631a;
+  padding: 10px 16px 6px 17px;
+}
+
+.share-popup li a.insta:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: -10px;
+    top: 65px;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #bc631a;
+}
+
+.share-popup li a.google-plus {
+  background-color: #bc1a1a;
+  padding: 10px 11px 6px 11px;
+}
+
+.share_popup_open {
+  opacity: 1;
+  transform: scale(1, 1)
+}
 /********************************
 
             FOOTER
