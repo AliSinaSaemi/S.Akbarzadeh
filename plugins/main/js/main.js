@@ -33,6 +33,21 @@ $(document).ready(function () {
   });
 });
 
+
+/*=======================
+
+     comment box show
+ 
+=======================*/
+
+$(document).ready(function () {
+  $(".open_commentbox").click(function () {
+    $(".commnetbox_hidden").toggleClass("commnetbox_show");
+    $(this).toggleClass("commentopen_color");
+  });
+});
+
+
 /*=======================
 
         back to top

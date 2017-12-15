@@ -37,7 +37,38 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Three Column <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu col-3 multi-column columns-3">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-4">
+                    <ul class="multi-column-dropdown">
+                      <li><a href="#">Action</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <i class="fa fa-angle-down" aria-hidden="true"></i></a>
               <ul class="dropdown-menu">
@@ -48,6 +79,7 @@
             </li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li class="relative">
               <a class="search-btn" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
               <div id="searchBox" class="search-box">
@@ -144,15 +176,44 @@
         <p><strong>trigger :</strong> این آیتم اولین نکته ای است که پروسه ریز تعاملات را برای ما ایجاد می کند، trigger می تواند یک عمل دستی باشد، مانند تلنگر زدن یا کلیک کردن روی یک آیکن. این trigger می تواند در سیستم ایجاد شود و بلافاصله بعد از رخ دادن یک عملیات، اجرا شود. برای مثال صدای اعلان، یک trigger است که می تواند در سیستم ذخیره شود و فقط زمانی که یک پیام برای شما ارسال می شود، به حالت اجرا درآید. </p>
         <div class="col-xs-12 relative">
           <ul class="first-comment-box list-inline list-unstyled">
-                    <li><a class="like post_social_options" data-toggle="tooltip" data-title="لایک" data-placement="top" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
-                    <li><a class="comment post_social_options" data-toggle="tooltip" data-title="نظر دادن" data-placement="top" href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
+            <li><a class="like post_social_options" data-toggle="tooltip" data-title="لایک" data-placement="top" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+            <li><a class="comment post_social_options open_commentbox" href="#"><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
           </ul>
+          <div class="commnetbox_hidden">
+            <textarea class="form-control " rows="5" id="comment" placeholder="نظر دهید"></textarea>
+            <button type="submit" class="btn btn-default">ثبت شود</button>
+          </div>
           <ul class="second-comment-box list-inline list-unstyled">
             <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a class="insta" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             <li><a class="g_plus" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
           </ul>
+
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="post-contact padding-2">
+    <div class="container">
+      <div class="row">
+        <h2 class="upper-title-2">ثبت نام و نظردهی</h2>
+        <form role="form">
+          <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ایمیل">
+          </div>
+          <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="نام و نام خانوادگی">
+          </div>
+          <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="رمز عبور">
+          </div>
+          <div class="form-group col-xs-12">
+            <textarea class="form-control" rows="5" id="comment" placeholder="نظر دهید"></textarea>
+          </div>
+          <div class="col-xs-10 col-sm-4 col-md-4 col-lg-4">
+            <button type="submit" class="btn btn-default">ثبت شود</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
